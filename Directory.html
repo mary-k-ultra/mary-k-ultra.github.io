@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>link out - mary k. ultra</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+        <!-- THIS IS THE CSS !-->
+    <style>
+        /* user styles */
+    
+        /* styles are what change the color and sizes of stuff on your site. */
+        html {
+              cursor: url("nat1046.cur"), auto;
+          }
+    
+        body {
+            margin: 0;
+            background-color: #08031a;
+            /* you can delete the line below if you'd prefer to not use an image */
+            background-size: 65px;
+            color: #fceaff;
+            background-image: url('GIF/starback2.gif');
+        }
+    
+        * {
+            box-sizing: border-box;
+        }
+    
+        /* below this line is CSS for the layout */
+    
+        /* this is a CSS comment
+    to uncomment a line of CSS, remove the * and the /
+    before and after the text */
+    
+    
+        /* the "container" is what wraps your entire website */
+        /* if you want something (like the header) to be Wider than
+    the other elements, you will need to move that div outside
+    of the container */
+        #container {
+            max-width: 900px;
+            /* this is the width of your layout! */
+            /* if you change the above value, scroll to the bottom
+    and change the media query according to the comment! */
+            margin: 0 auto;
+            /* this centers the entire page */
+        }
+    
+        /* the area below is for all links on your page
+    EXCEPT for the navigation */
+        #container a {
+            color: #ED64F5;
+            font-weight: bold;
+            /* if you want to remove the underline
+    you can add a line below here that says:
+    text-decoration:none; */
+        }
+    
+        /* navigation section!! */
+        #navbar {
+            height: 40px;
+            background-color: #00000000;
+            /* navbar color */
+            width: 100%;
+        }
+    
+        #navbar ul {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            justify-content: space-evenly;
+        }
+    
+        #navbar li {
+            padding-top: 10px;
+        }
+    
+        /* navigation links*/
+        #navbar li a {
+            color: #f897e9;
+            /* navbar text color */
+            font-weight: 800;
+            text-decoration: none;
+            /* this removes the underline */
+        }
+    
+        /* navigation link when a link is hovered over */
+        #navbar li a:hover {
+            color: #abdaff;
+            text-decoration: underline;
+            text-underline-offset: 25%;
+        }
+    
+        #flex {
+            display: flex;
+        }
+    
+        /* this colors BOTH sidebars
+    if you want to style them separately,
+    create styles for #leftSidebar and #rightSidebar */
+        aside {
+            background-color: #241445;
+            width: 200px;
+            padding: 20px;
+            font-size: smaller;
+            /* this makes the sidebar text slightly smaller */
+        }
+    
+    
+        /* this is the color of the main content area,
+    between the sidebars! */
+        main {
+            background-color: #00000000;
+            flex: 1;
+            padding: 20px;
+            order: 2;
+        }
+    
+        /* what's this "order" stuff about??
+    allow me to explain!
+    if you're using both sidebars, the "order" value
+    tells the CSS the order in which to display them.
+    left sidebar is 1, content is 2, and right sidebar is 3! */
+    
+        */ #leftSidebar {
+            order: 1;
+        }
+    
+        #rightSidebar {
+            order: 3;
+        }
+    
+        footer {
+            background-color: #00000000;
+            /* background color for footer */
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+            text-align: center;
+            /* this centers the footer text */
+        }
+    
+        .major-mono-display-regular {
+      font-family: "Major Mono Display", monospace;
+      font-weight: 400;
+      font-style: normal;
+    }
+    
+    .share-tech-mono-regular {
+      font-family: "Share Tech Mono", monospace;
+      font-weight: 400;
+      font-style: normal;
+    }
+    
+    
+        h1,
+        h2,
+        h3 {
+            color: #f897e9;
+        }
+    
+        h1 {
+            font-size: 25px;
+            text-align: center;
+        }
+    
+        strong {
+            /* this styles bold text */
+            color: #f897e9;
+            
+        }
+    
+        /* this is just a cool box, it's the darker colored one */
+        .box {
+            background-color: #13092D;
+            border: 1px solid #ED64F5;
+            padding: 10px;
+        }
+    
+        .right {
+      float: right;
+      padding: 10px;
+    }
+    
+        /* CSS for extras */
+    
+        #topBar {
+            width: 100%;
+            height: 30px;
+            padding: 10px;
+            font-size: smaller;
+            background-color: #13092D;
+        }
+    
+        .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+    
+        /* BELOW THIS POINT IS MEDIA QUERY */
+    
+        /* so you wanna change the width of your page? 
+    by default, the container width is 900px.
+    in order to keep things responsive, take your new height,
+    and then subtrack it by 100. use this new number as the 
+    "max-width" value below
+    */
+    
+        @media only screen and (max-width: 800px) {
+            #flex {
+                flex-wrap: wrap;
+            }
+    
+            aside {
+                width: 100%;
+            }
+    
+            /* the order of the items is adjusted here for responsiveness!
+    since the sidebars would be too small on a mobile device.
+    feel free to play around with the order!
+    */
+            main {
+                order: 1;
+            }
+    
+            #leftSidebar {
+                order: 2;
+            }
+    
+            #rightSidebar {
+                order: 3;
+            }
+    
+            #navbar ul {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container"><div id="header" style="height: 100px;"></div>
+    <div id="headerArea">
+        
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="Music.html">music</a></li>
+                <li><a href="Video.html" >video art</a></li>
+                <li><a href="Directory.html" style="text-decoration: underline; text-underline-offset: 25%;">link out</a></li>
+
+            </ul>
+        </nav>
+    </div> 
+
+    <div>
+        <main>
+            <p class="share-tech-mono-regular" style="text-align: center;">
+                friends !!!
+            </p>
+            <br>
+            <a href="https://openmindsaturatedbrain.blogspot.com/" class="center">
+                <img src="openmindsaturatedbrain.jpg" alt="Open Mind Saturated Brain" width="425px" height="113px" class="center">
+            </a>
+            <br>
+            <a href="http://www.zegemabeachrecords.com/">
+                <img src="Zegema_Logo+HIRES.jpg" alt="Zegema Beach Records" width="425px" height="265px" class="center"> 
+            </a>
+            <br>
+            <a href="http://www.ardentinstruments.com/">
+                <img src="Ardent-Instruments_LOGO_BOLD-option.jpg" alt="Ardent Instruments" width="425px" height="301px" class="center">
+            </a>
+        </main>
+    </div>
+</body>
+</html>
