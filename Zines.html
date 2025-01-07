@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>music - mary k. ultra</title>
+    <title>home - mary k. ultra</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Share+Tech+Mono&display=swap" rel="stylesheet">
@@ -24,6 +24,22 @@
         color: #fceaff;
         background-image: url('GIF/starback2.gif');
     }
+
+    #mydiv {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+}
+
+#mydivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
+}
 
     * {
         box-sizing: border-box;
@@ -83,7 +99,7 @@ text-decoration:none; */
     #navbar li a {
         color: #f897e9;
         /* navbar text color */
-        font-weight: 800;
+        font-weight: 801px;
         text-decoration: none;
         /* this removes the underline */
     }
@@ -196,12 +212,6 @@ left sidebar is 1, content is 2, and right sidebar is 3! */
         background-color: #13092D;
     }
 
-    .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 
     /* BELOW THIS POINT IS MEDIA QUERY */
 
@@ -220,7 +230,6 @@ and then subtrack it by 100. use this new number as the
         aside {
             width: 100%;
         }
-        
 
         /* the order of the items is adjusted here for responsiveness!
 since the sidebars would be too small on a mobile device.
@@ -244,59 +253,46 @@ feel free to play around with the order!
     }
 </style>
 </head>
+
 <body>
-    <div id="container"><div id="header" style="height: 100px;"></div>
-    <div id="headerArea">
+   
+    
+
+    <div id="container">
+        
+        <div id="header" style="height: 100px;"></div>
+        <div id="headerArea">
         
         <nav id="navbar">
             <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="Music.html" style="text-decoration: underline; text-underline-offset: 25%;">music</a></li>
+                <li><a href="index.html" style="text-decoration: underline; text-underline-offset: 25%;">home</a></li>
+                <li><a href="Music.html">music</a></li>
                 <li><a href="Video.html">video art</a></li>
+                <li><a href="Zines.html">zines</a></li>
                 <li><a href="Arcade.html">arcade</a></li>
                 <li><a href="Directory.html">link out</a></li>
 
-
             </ul>
         </nav>
-    </div> 
+        </div>
 
-    <div id="flex">
+        <div id="flex">
+        
         <main>
-            <p style="color: white; text-align: left; text-justify: auto;" class="share-tech-mono-regular">
-                click an album cover to listen in browser or download! all of it is free, let me know if you use it for something :)
-                <br> <br>
-                if you'd like to send me a few dollars for my work, you can email me at marykultrasemail@protonmail.com and i'll send you a little thank you gift
-                <br><br><br>
-               
-                    <a href="BedroomDemos.html">              
-                       <figure>
-                        <img src="Music\Bedroom Demos 2020\cover.jpg" alt="Bedroom Demos 2020 Album Art" width="400px" height="400px" class="center">
-                        <br>
-                        <figcaption style="text-align: center; color: white;" class="share-tech-mono-regular" >
-                            Bedroom Demos 2020 - Jane Cadogan (FFO Elliott Smith, Sufjan Stevens, Lomelda)
-                        </figcaption>
-                       </figure>
-                  </a>
-                  <br>
-                  <br>
-                  <a href="HelpOurselves.html">              
-                    <figure>
-                     <img src="Music\Help Ourselves\comp001_coverart.png" alt="Help Ourselves Album Art" width="400px" height="400px" class="center">
-                     <br>
-                     <figcaption style="text-align: center; color: white;" class="share-tech-mono-regular" >
-                         Help Ourselves - Knife Edge Death Match (FFO Nine Inch Nails, Author & Punisher)
-                     </figcaption>
-                    </figure>
-               </a>
-               <br>
-               <br>
-               Shows I've worked/booked/played:
-               <br>
-               
-                
-            </p>
+        
+            <a href="https://drive.google.com/file/d/1-jShQf6iNUjq9N_XCJBWzmYldh5Ix_6O/view?usp=drive_link" style="padding: 15px;">
+                <img src="00.png" alt="Argo Aloud" width="1650px" height="2550px">
+            </a>
+        
         </main>
-    </div>
+
+       
+           
+       
+       
+        
+        </div>
+
+        
 </body>
 </html>
