@@ -213,6 +213,25 @@ left sidebar is 1, content is 2, and right sidebar is 3! */
     }
 
 
+    figure.item {
+    /* To correctly align image, regardless of content height: */
+    vertical-align: top;
+    display: inline-block;
+    /* To horizontally center images and caption */
+    text-align: center;
+    /* The width of the container also implies margin around the images. */
+    width: 120px;
+}
+img {
+    width: 165px;
+    height: 255px;
+    background-color: rgba(128, 128, 128, 0);
+}
+.caption {
+    /* Make the caption a block so it occupies its own line. */
+    display: block;
+}
+
     /* BELOW THIS POINT IS MEDIA QUERY */
 
     /* so you wanna change the width of your page? 
@@ -265,10 +284,10 @@ feel free to play around with the order!
         
         <nav id="navbar">
             <ul>
-                <li><a href="index.html" style="text-decoration: underline; text-underline-offset: 25%;">home</a></li>
+                <li><a href="index.html" >home</a></li>
                 <li><a href="Music.html">music</a></li>
                 <li><a href="Video.html">video art</a></li>
-                <li><a href="Zines.html">zines</a></li>
+                <li><a href="Zines.html"style="text-decoration: underline; text-underline-offset: 25%;" >zines</a></li>
                 <li><a href="Arcade.html">arcade</a></li>
                 <li><a href="Directory.html">link out</a></li>
 
@@ -279,10 +298,16 @@ feel free to play around with the order!
         <div id="flex">
         
         <main>
-        
-            <a href="https://drive.google.com/file/d/1-jShQf6iNUjq9N_XCJBWzmYldh5Ix_6O/view?usp=drive_link" style="padding: 15px;">
-                <img src="00.png" alt="Argo Aloud" width="165px" height="255px">
-            </a>
+            
+            <figure class="item">
+                <img src="00.png"/>
+                <figcaption class="caption">
+                        <li>
+                            <a href="https://archive.org/details/argo-aloud" style="text-decoration: underline; text-underline-offset: 25%;">Argo Aloud</a>
+                        </li>
+                </figcaption>
+            </figure>
+           
         
         </main>
 
